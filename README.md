@@ -125,7 +125,7 @@ pytest tests/ -v
 
 ---
 
-## Key Concepts (for interviews)
+## Key Concepts 
 
 ### Why LangGraph over plain LangChain?
 LangGraph gives you **stateful, cyclical graphs** — agents can loop, branch, and share state. LangChain alone is linear chains. For multi-agent systems with routing and state transitions, LangGraph is the right tool.
