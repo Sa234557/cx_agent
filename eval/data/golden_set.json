@@ -1,0 +1,82 @@
+[
+  {
+    "query": "How do I reset my password?",
+    "response": "To reset your password, click 'Forgot Password' on the login page. You'll receive an email with a secure reset link valid for 24 hours. Click the link and follow the on-screen instructions to choose a new password. If you don't see the email, check your spam folder.",
+    "context": "Password reset requires email verification. The reset link is valid for 24 hours. If the email is not received, users should check their spam folder.",
+    "expected_intent": "faq",
+    "actual_intent": "faq",
+    "latency_ms": 820,
+    "model_name": "gemini-pro",
+    "agent_used": "faq_agent"
+  },
+  {
+    "query": "What are your business hours?",
+    "response": "Our customer support team is available Monday through Friday, 9 AM to 6 PM EST. For urgent matters outside business hours, you can submit a ticket and we will respond within the next business day.",
+    "context": "Business hours: Monday–Friday 9AM–6PM EST. Tickets outside hours are addressed next business day.",
+    "expected_intent": "faq",
+    "actual_intent": "faq",
+    "latency_ms": 750,
+    "model_name": "gemini-pro",
+    "agent_used": "faq_agent"
+  },
+  {
+    "query": "My order arrived damaged and I am furious!",
+    "response": "I sincerely apologise for the damaged order — that is absolutely unacceptable and I completely understand your frustration. I am escalating this to our priority support team right now. They will contact you within 2 hours to arrange an immediate replacement or full refund, whichever you prefer.",
+    "context": "Damaged orders qualify for priority escalation. Customer should be offered replacement or refund within 2 hours.",
+    "expected_intent": "escalation",
+    "actual_intent": "escalation",
+    "latency_ms": 1100,
+    "model_name": "gemini-pro",
+    "agent_used": "escalation_agent"
+  },
+  {
+    "query": "I need to speak to a real person right now.",
+    "response": "Of course — I am connecting you to a live customer support agent immediately. Your estimated wait time is approximately 3 minutes. Please stay on the line and a human agent will be with you shortly.",
+    "context": "",
+    "expected_intent": "human_handoff",
+    "actual_intent": "human_handoff",
+    "latency_ms": 650,
+    "model_name": "gemini-pro",
+    "agent_used": "human_handoff_agent"
+  },
+  {
+    "query": "How do I cancel my subscription?",
+    "response": "You can cancel your subscription at any time from the Account Settings page. Go to Settings → Subscription → Cancel Plan. Your access will remain active until the end of the current billing period. No cancellation fees apply.",
+    "context": "Cancellation is available in Account Settings. Access continues until billing period end. No fees.",
+    "expected_intent": "faq",
+    "actual_intent": "faq",
+    "latency_ms": 900,
+    "model_name": "gemini-pro",
+    "agent_used": "faq_agent"
+  },
+  {
+    "query": "This is completely unacceptable service. I've been waiting three weeks for my refund!",
+    "response": "I am deeply sorry for this unacceptable delay — a three-week wait for a refund is absolutely not the experience we want you to have. I am immediately escalating your case to our finance team with high-priority status. You will receive a direct call from a senior agent within the next 30 minutes to resolve this.",
+    "context": "Refunds should be processed within 5–7 business days. Delays beyond 10 days require escalation to finance team.",
+    "expected_intent": "escalation",
+    "actual_intent": "escalation",
+    "latency_ms": 1350,
+    "model_name": "gemini-pro",
+    "agent_used": "escalation_agent"
+  },
+  {
+    "query": "Do you offer a free trial?",
+    "response": "Yes! We offer a 14-day free trial with full access to all features. No credit card is required to start. Simply sign up on our website and your trial begins immediately.",
+    "context": "14-day free trial available. No credit card required. Full feature access during trial.",
+    "expected_intent": "faq",
+    "actual_intent": "faq",
+    "latency_ms": 700,
+    "model_name": "gemini-pro",
+    "agent_used": "faq_agent"
+  },
+  {
+    "query": "I want to talk to your manager.",
+    "response": "I completely understand. I am transferring you to a senior support manager right away. Please hold — a manager will be with you within 5 minutes to address your concerns directly.",
+    "context": "",
+    "expected_intent": "human_handoff",
+    "actual_intent": "human_handoff",
+    "latency_ms": 580,
+    "model_name": "gemini-pro",
+    "agent_used": "human_handoff_agent"
+  }
+]

@@ -1,0 +1,29 @@
+# ── Original cx_agent dependencies ──────────────────────────────────────────
+langgraph==0.2.28
+langchain==0.3.7
+langchain-google-genai==2.0.4
+langchain-community==0.3.7
+chromadb==0.5.18
+fastapi==0.115.4
+uvicorn==0.32.0
+pydantic==2.9.2
+python-dotenv==1.0.1
+sentence-transformers==3.2.1
+
+# ── LLM Eval & Observability Platform (all free, no paid APIs) ───────────────
+# No additional pip packages required!
+#
+# The eval platform uses only Python stdlib + packages already listed above:
+#   - sqlite3       : built-in, zero-config persistence
+#   - re            : built-in, regex for toxicity + tokenisation
+#   - json          : built-in, serialisation
+#   - pathlib       : built-in, file paths
+#   - dataclasses   : built-in, clean data containers
+#   - fastapi       : already listed above (for /eval/* router)
+#   - pydantic      : already listed above (request/response models)
+#
+# Optional — install these if you want to extend the platform later:
+# ragas==0.1.21               # RAGAS faithfulness (requires OpenAI key)
+# deepeval==0.21.0             # DeepEval metrics framework
+# prometheus-client==0.20.0    # Export metrics to Prometheus/Grafana
+# opentelemetry-sdk==1.24.0    # Distributed tracing (OTel)
