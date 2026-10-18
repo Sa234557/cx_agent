@@ -125,6 +125,34 @@ pytest tests/ -v
 
 ---
 
+## LLMOps Evaluation & Observability Platform
+
+Every production response is automatically shadow-evaluated across 6 metrics with zero added latency.
+
+| Metric | Method | What it catches |
+|---|---|---|
+| Relevance | Token overlap | Off-topic responses |
+| Faithfulness | Keyword overlap vs context | Hallucination |
+| Toxicity | Regex pattern matching | Harmful output |
+| Response Length | Word count scoring | Too brief or verbose |
+| Latency | Normalised ms score | Slow responses |
+| Intent Accuracy | Label match | Routing errors |
+
+### Run Evaluation
+```cmd
+python eval/run_eval.py smoke
+python eval/run_eval.py suite --dataset eval/data/golden_set.json
+python eval/run_eval.py dashboard --hours 24
+```
+
+### Results
+- 83% pass rate across 12+ test evaluations
+- faq_agent best performer at 0.859 avg score
+- All toxicity, latency and intent accuracy checks passed perfectly
+
+## API Documentation
+![Swagger UI](docs_screenshot.png)
+
 ## Key Concepts 
 
 ### Why LangGraph over plain LangChain?
