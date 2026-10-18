@@ -35,6 +35,9 @@ Customer Query
 
 ---
 
+## Live API — Swagger UI
+![Swagger UI showing all eval endpoints](docs_screenshot.png)
+
 ## Tech Stack
 
 | Component | Technology | Why |
@@ -150,8 +153,6 @@ python eval/run_eval.py dashboard --hours 24
 - faq_agent best performer at 0.859 avg score
 - All toxicity, latency and intent accuracy checks passed perfectly
 
-## API Documentation
-![Swagger UI](docs_screenshot.png)
 
 ## Key Concepts 
 
